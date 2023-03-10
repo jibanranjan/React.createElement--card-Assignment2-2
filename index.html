@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: rgba(214, 214, 214, 0.548);">
+    <div id="root"></div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;        }
+    </style>
+
+    <script>
+
+        let topimg = React.createElement('img',{src:"dp.jpg", 
+        style:{width:"420px",
+               height:"280px",
+               borderRadius: "4% 4% 0% 0% ",
+               position:""
+
+    }},null)
+
+       let toph1 = React.createElement('h1',{style:{ marginLeft:"70px" ,
+                                                     marginTop:"2px"
+
+       }},"jibanranjan debata")
+
+       let topp = React.createElement('p', {style:{color:"rgb(112,112,112)", marginTop:"10x",marginLeft:"150px"}}, "Full Stack Developer")
+
+
+
+
+let frstdv = React.createElement('div',{style:{position:"absolute"}},[topimg,toph1,topp])
+
+
+let fstno = React.createElement('h1',{style:{marginLeft:"30px", marginTop:"9px",fontWeight:"100"}}, "26")
+let scndno = React.createElement('h1',{style:{marginLeft:"180px", marginTop:"-33px", fontWeight:"100"}}, "94")
+let thrdno = React.createElement('h1',{style:{marginLeft:"320px", marginTop:"-33px", fontWeight:"100"}}, "139")
+
+
+
+let frstp = React.createElement('p',{style:{marginTop:"-4px",fontSize:"20px"}}, "Shoot")
+let scndp = React.createElement('p',{style:{fontSize:"20px"}}, "Following")
+let thrdp = React.createElement('p',{style:{fontSize:"20px"}}, "Followers")
+
+
+let paradiv = React.createElement('div', {style:{color:"rgb(112,112,112)",marginLeft:"25px",display:"flex", gap:"85px"} }, [frstp,scndp,thrdp])
+
+let scnddv = React.createElement('div',{style:{position:"absolute", bottom:"29px"}},[fstno,scndno,thrdno, paradiv])
+
+let lowerdiv = React.createElement('div', {style:{ width:"420px",
+                                                  height:"100px",
+                                                  backgroundColor:"rgb(192,192,192)",
+                                                  marginLeft:"0px",
+                                                  marginTop:"0px",
+                                                  marginButtom:"0",
+                                                  position:"absolute",
+                                                  bottom:"18px",
+                                                  boxShadow: "0px 5px 20px -1px #111",
+                                                  borderRadius:"0% 0% 10% 10%"
+
+}},null)
+
+let dot1 = React.createElement('li',{style:{width:"10px", height:"10px", borderRadius:"50%", backgroundColor:"white"}}, null)
+let dot2 = React.createElement('li',{style:{width:"10px", height:"10px", borderRadius:"50%", backgroundColor:"white"}}, null)
+let dot3 = React.createElement('li',{style:{width:"10px", height:"10px", borderRadius:"50%", backgroundColor:"white"}}, null)
+
+let uldiv = React.createElement('ul',{style:{position:"absolute", marginLeft:"400px", zIndex:"1", opacity: "0.5"}},[dot1, dot2, dot3])
+
+
+// let icon = React.createElement('div',{style:{position:"absolute",width:"20px", height:"20px", backgroundColor:"pink"}},"+")
+
+
+let maindiv = React.createElement('div', {style:{ width:"420px",
+                                                  height:"450px",
+                                                  backgroundColor:"white",
+                                                  marginLeft:"450px",
+                                                  marginTop:"150px",
+                                                  boxShadow:"0 0 20px black",
+                                                  borderRadius:"15px",
+                                                
+
+}},[uldiv,lowerdiv,frstdv,scnddv])
+
+ReactDOM.render(maindiv, document.getElementById('root'))
+    </script>
+    
+</body>
+</html>
